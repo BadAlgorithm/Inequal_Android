@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="target_number_style">
+        <item name="android:textSize">90sp</item>
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:textColor">#FFCC80</item>
+    </style>
+
+    <style name="game_over_text_style">
+        <item name="android:textSize">70sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/background</item>
+    </style>
+
+    <style name="surround_number_style">
+        <item name="android:textSize">50sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#EF9A9A</item>
+    </style>
+
+    <style name="standard_game_text_size">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/standard_white</item>
+    </style>
+
+    <style name="highscores_place_text_style">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:textColor">@color/standard_white</item>
+    </style>
+
+    <style name="highscores_standard_text_style">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/standard_white</item>
+    </style>
+
+    <style name="regular_app_font">
+        <item name="android:textColor">@color/standard_white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

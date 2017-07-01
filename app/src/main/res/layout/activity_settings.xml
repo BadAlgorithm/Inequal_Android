@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hazup.isochoric.greaterorlessthan.controller.SettingsActivity">
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:useDefaultMargins="true"
+        android:orientation="horizontal"
+        android:columnCount="2"
+        android:rowCount="3">
+        <TextView android:text="Gameplay Mode"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingStart="10dp"
+            android:layout_columnWeight="1"
+            style="@style/standard_game_text_size"/>
+        <RadioGroup
+            android:id="@+id/settings_radio_group"
+            android:layout_columnWeight="1"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/swipe_radio_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/swipe_gesture"/>
+            <RadioButton
+                android:id="@+id/accel_radio_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/accelerometer"/>
+        </RadioGroup>
+        <TextView
+            android:layout_columnWeight="1"
+            android:text="@string/set_name"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingStart="10dp"
+            style="@style/standard_game_text_size"/>
+        <EditText
+            android:id="@+id/settings_name_edit_text"
+            android:layout_columnWeight="1"
+            android:hint="@string/user_name_hint"/>
+    </GridLayout>
+
+    <Button
+        android:id="@+id/apply_settings_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/apply_settings"/>
+
+</LinearLayout>

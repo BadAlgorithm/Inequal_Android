@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hazup.isochoric.greaterorlessthan.controller.MainMenuActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:src="@drawable/logowithoutbg"
+        android:padding="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="...an inequality a day keeps the doctor away..."
+        android:textSize="16sp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="#fff"/>
+
+    <GridLayout
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:rowCount="2"
+        android:useDefaultMargins="true"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <Button
+            style="@style/home_screen_btn_style"
+            android:text="@string/play_menu_item"
+            android:id="@+id/play_game_btn"/>
+
+        <Button
+            style="@style/home_screen_btn_style"
+            android:text="@string/settings"
+            android:id="@+id/settings_btn"/>
+
+        <Button
+            style="@style/home_screen_btn_style"
+            android:text="@string/high_scores"
+            android:id="@+id/high_scores_btn"/>
+
+        <Button
+            style="@style/home_screen_btn_style"
+            android:text="@string/rules"
+            android:id="@+id/exit_btn"/>
+    </GridLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="8"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:id="@+id/new_user_prompt_container">
+
+        <EditText
+            android:id="@+id/new_username_edit_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:hint="@string/username_prompt"
+            android:textColor="@color/standard_white"
+            android:textColorHint="#EEEEEE"
+            />
+
+        <Button
+            android:id="@+id/new_user_submit_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/submit_btn_txt"/>
+    </LinearLayout>
+</LinearLayout>
